@@ -1,0 +1,50 @@
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4">
+
+            <form action="" class="bg-light p-5  rounded">
+
+                <!-- <center> -->
+                    <img align="center" src="../../assets/images/logo.jpeg" alt="" class="border rounded-circle" width="75px" height="75px">
+                    <br>
+                    <h4 align="center">My Bank</h4>
+                    <br>
+                <!-- </center> -->
+
+                <h6 align="center">{{aim}}</h6>
+
+                <!-- <input (change)="acnoChange($event)" type="text" id="loginAccno" class="form-control mt-3" [placeholder]="accounts">
+                <input (change)="pswdChange($event)" type="password" id="loginPass" class="form-control mt-2" placeholder="Password"> -->
+                
+
+
+                <input #acno type="text" id="loginAccno" class="form-control mt-3" [placeholder]="accounts">
+                <input #pswd type="password" id="loginPass" class="form-control mt-2" placeholder="Password">
+                
+
+                <div>
+
+                    <button type="button" class="btn btn-primary mt-4 form-control" (click)="login(acno,pswd)">login</button>
+                    
+                    <!-- <center> -->
+                        <div class="mt-5 pb-4">
+                            <p align="center"><a class="float-start" href="">Forgot Password?</a> <a class="float-end" href="./signup.html">Sign up</a></p>
+                        </div>
+                    <!-- </center> -->
+                    
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+
+</div>
